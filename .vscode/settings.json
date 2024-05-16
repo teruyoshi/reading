@@ -1,0 +1,50 @@
+{
+    // デバッグ設定
+    "debug.inlineValues": "on", // エディターにインラインデバッグ値を表示
+    "debug.internalConsoleOptions": "openOnSessionStart", // デバッグセッション開始時にデバッグコンソールを自動的に開く
+    "debug.openDebug": "openOnSessionStart", // セッション開始時にデバッグビューを自動的に開く
+
+    // エディター設定
+    "editor.copyWithSyntaxHighlighting": false, // シンタックスハイライトなしでコピー
+    "editor.dragAndDrop": false, // ドラッグアンドドロップ編集を無効化
+    "editor.formatOnPaste": true, // 貼り付け時にフォーマット
+    "editor.formatOnSave": true, // 保存時にフォーマット
+    "editor.formatOnType": true, // タイピング中にフォーマット
+    "editor.minimap.enabled": false, // ミニマップを無効化
+    "editor.renderControlCharacters": true, // 制御文字を表示
+    "editor.showFoldingControls": "always", // 折りたたみコントロールを常に表示
+    "editor.tabSize": 2, // タブサイズを2スペースに設定
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?　、。！？「」【】『』（）", // 単語の区切り文字を定義
+    "editor.wordWrap": "on", // 自動改行を有効化
+
+    // エクスプローラー設定
+    "explorer.incrementalNaming": "smart", // 重複ファイルのスマートなインクリメンタル命名を使用
+
+    // ファイル設定
+    "files.eol": "\n", // 行末文字をLFに設定
+    "files.insertFinalNewline": true, // ファイルの最後に改行を挿入
+    "files.trimFinalNewlines": true, // 保存時に最後の改行を削除
+    "files.trimTrailingWhitespace": true, // 保存時に末尾の空白を削除
+
+    // 検索設定
+    "search.showLineNumbers": true, // 検索結果に行番号を表示
+
+    // ターミナル設定
+    "terminal.integrated.confirmOnExit": "always", // ターミナル終了時に確認
+    "terminal.integrated.copyOnSelection": true, // 選択時にクリップボードにコピー
+
+    // ワークベンチ設定
+    "workbench.editor.tabSizing": "shrink", // タブのサイズを適合させる
+    "workbench.editor.enablePreview": false, // エディターのプレビューモードを無効化
+
+    // 特定の言語設定
+    "[csv]": {
+        "editor.wordWrap": "off" // CSVファイルの自動改行を無効化
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode" // JSONファイルのデフォルトフォーマッターをPrettierに設定
+    },
+    "[log]": {
+        "editor.wordWrap": "off" // ログファイルの自動改行を無効化
+    }
+}
