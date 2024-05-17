@@ -6,6 +6,7 @@
 
     // エディター設定
     "editor.copyWithSyntaxHighlighting": false, // シンタックスハイライトなしでコピー
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.dragAndDrop": false, // ドラッグアンドドロップ編集を無効化
     "editor.formatOnPaste": true, // 貼り付け時にフォーマット
     "editor.formatOnSave": true, // 保存時にフォーマット

@@ -1,0 +1,34 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier", // Prettierの設定を追加
+        "prettier/@typescript-eslint", // TypeScript用のPrettier設定を追加
+        "prettier/react" // React用のPrettier設定を追加
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": ["react", "@typescript-eslint"],
+    "settings": {
+        "react": {
+            "version": "detect" // インストールされているReactバージョンを自動検出
+        }
+    },
+    "rules": {
+        "semi": ["error", "never"], // セミコロンを使用しない
+        "quotes": ["error", "single"], // シングルクォートを使用
+        "react/prop-types": "off", // TypeScriptを使用しているためPropTypesを無効化
+        "@typescript-eslint/explicit-module-boundary-types": "off" // 関数の戻り値の型を明示しないルールを無効化
+    }
+}
